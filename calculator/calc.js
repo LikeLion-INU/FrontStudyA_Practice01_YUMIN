@@ -26,11 +26,7 @@ buttons.forEach(button => {
             }
         } else {
             if (resultDisplay) {
-                if (!isNaN(value)) {
-                    currentInput = value;
-                } else {
-                    currentInput += value;
-                }
+                currentInput += value; 
                 resultDisplay = false;
             } else {
                 currentInput += value;
