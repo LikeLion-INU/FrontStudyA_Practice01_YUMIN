@@ -20,9 +20,9 @@ buttons.forEach(button => {
                 currentInput = result.toString();
                 resultDisplay = true;
             } catch (error) {
-                screen.textContent = 'Error';
+                screen.textContent = 'ERROR';
                 currentInput = '';
-                resultDisplayd = false;
+                resultDisplay = false;
             }
         } else {
             if (resultDisplay) {
@@ -31,7 +31,7 @@ buttons.forEach(button => {
                 } else {
                     currentInput += value;
                 }
-                resultDisplayed = false;
+                resultDisplay = false;
             } else {
                 currentInput += value;
             }
